@@ -6,16 +6,44 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    // Definindo o número de casas para cada peça
+    int casas_torre = 5;      // Torre move 5 casas para a direita
+    int casas_bispo = 5;      // Bispo move 5 casas na diagonal (cima e direita)
+    int casas_rainha = 8;     // Rainha move 8 casas para a esquerda
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // -----------------------------
+    // Movimentação da Torre (for)
+    // A torre move-se em linha reta, horizontal ou vertical. Aqui, simulamos 5 casas para a direita.
+    printf("Movimentação da Torre:\n");
+    for (int i = 1; i <= casas_torre; i++) {
+        // Para cada casa, imprime a direção do movimento
+        printf("Direita\n");
+    }
+    printf("\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // -----------------------------
+    // Movimentação do Bispo (while)
+    // O bispo move-se em diagonal. Aqui, simulamos 5 casas na diagonal para cima e à direita.
+    printf("Movimentação do Bispo:\n");
+    int i = 1;
+    while (i <= casas_bispo) {
+        // Para cada casa, imprime a combinação de direções
+        printf("Cima Direita\n");
+        i++;
+    }
+    printf("\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // -----------------------------
+    // Movimentação da Rainha (do-while)
+    // A rainha move-se em todas as direções. Aqui, simulamos 8 casas para a esquerda.
+    printf("Movimentação da Rainha:\n");
+    int j = 1;
+    do {
+        // Para cada casa, imprime a direção do movimento
+        printf("Esquerda\n");
+        j++;
+    } while (j <= casas_rainha);
+    printf("\n");
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
